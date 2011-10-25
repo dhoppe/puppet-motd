@@ -1,0 +1,17 @@
+# Class: motd
+#   This module manages motd
+#
+# Definition:
+#   -
+#
+# Parameters:
+#   -
+#
+# Actions:
+#   Installs the motd, motd.tail
+#
+# Requires:
+#   -
+#
+# Sample Usage:
+#   -
