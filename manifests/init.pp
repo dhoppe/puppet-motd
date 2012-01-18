@@ -1,18 +1,18 @@
 class motd {
-	if $lsbdistcodename == "lenny" {
+	if $::lsbdistcodename == "lenny" {
 		file { "/etc/init.d/bootmisc.sh":
 			owner   => root,
 			group   => root,
 			mode    => 0755,
-			source  => "puppet:///modules/motd/$lsbdistcodename/etc/init.d/bootmisc.sh",
+			source  => "puppet:///modules/motd/$::lsbdistcodename/etc/init.d/bootmisc.sh",
 			require => Package["cowsay"],
 		}
-	} elsif $lsbdistcodename == "squeeze" {
+	} elsif $::lsbdistcodename == "squeeze" {
 		file { "/etc/init.d/bootlogs":
 			owner   => root,
 			group   => root,
 			mode    => 0755,
-			source  => "puppet:///modules/motd/$lsbdistcodename/etc/init.d/bootlogs",
+			source  => "puppet:///modules/motd/$::lsbdistcodename/etc/init.d/bootlogs",
 			require => Package["cowsay"],
 		}
 	} else {
@@ -21,7 +21,7 @@ class motd {
 			owner   => root,
 			group   => root,
 			mode    => 0755,
-			source  => "puppet:///modules/motd/$lsbdistcodename/etc/update-motd.d",
+			source  => "puppet:///modules/motd/$::lsbdistcodename/etc/update-motd.d",
 			require => Package["cowsay"],
 		}
 	}
