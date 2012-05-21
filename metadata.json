@@ -8,8 +8,10 @@
   "summary": "MOTD Module",
   "version": "0.0.6",
   "checksums": {
+    "Gemfile": "d5ce5c80f3c31e583507eb80b61b7400",
     "Modulefile": "f793f49d23d4c6441e91a812b1c34f74",
     "README": "465d2eac315d4ae6dc5030fa757ba52a",
+    "Rakefile": "aac3a0179a3d0a7749c5dfc1384829e5",
     "files/lenny/etc/init.d/bootmisc.sh": "31a07946b8a40810773b02a37cdfd05e",
     "files/maverick/etc/update-motd.d/00-header": "8d28a1de5485260e00a7793e5b257e44",
     "files/maverick/etc/update-motd.d/10-help-text": "f1ee9c469043273d878c7eb9d29dc882",
