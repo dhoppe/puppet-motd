@@ -4,7 +4,7 @@ class motd::params {
       $file   = '/etc/init.d/bootlogs'
       $source = "puppet:///modules/motd/${::lsbdistcodename}/etc/init.d/bootlogs"
     }
-    'maverick', 'natty': {
+    'natty': {
       $file   = '/etc/update-motd.d'
       $source = "puppet:///modules/motd/${::lsbdistcodename}/etc/update-motd.d"
     }

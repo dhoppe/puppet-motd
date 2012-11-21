@@ -1,6 +1,0 @@
-#!/bin/sh
-
-#uname -a
-#printf "%s\n" "$(lsb_release -s -d)"
-
-uname -a | /usr/games/cowthink
